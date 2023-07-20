@@ -84,6 +84,7 @@ const HomeHero: FC = () => {
                   >
                     $500{' '}
 
+
                   </Typography>
                   <Typography
                     component="mark"
