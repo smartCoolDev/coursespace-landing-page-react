@@ -18,16 +18,16 @@ interface ExpItemProps {
 
 const exps: Array<Exp> = [
   {
-    label: 'Students',
-    value: '10K+',
+    label: 'Units Leased',
+    value: '150+',
   },
   {
-    label: 'Quality Course',
+    label: 'Owners Served',
     value: '20+',
   },
   {
-    label: 'Experience Mentors',
-    value: '10+',
+    label: 'Years of Experience',
+    value: '20+',
   },
 ]
 
@@ -77,68 +77,37 @@ const HomeHero: FC = () => {
                     component="mark"
                     sx={{
                       position: 'relative',
+                      fontSize: 'inherit',
+                      fontWeight: 'inherit',
+                      backgroundColor: 'unset',
+                    }}
+                  >
+                    $500{' '}
+
+
+                  </Typography>
+                  <Typography
+                    component="mark"
+                    sx={{
+                      position: 'relative',
                       color: 'primary.main',
                       fontSize: 'inherit',
                       fontWeight: 'inherit',
                       backgroundColor: 'unset',
                     }}
                   >
-                    Improve{' '}
-                    <Box
-                      sx={{
-                        position: 'absolute',
-                        top: { xs: 24, md: 34 },
-                        left: 2,
-                        transform: 'rotate(3deg)',
-                        '& img': { width: { xs: 146, md: 210 }, height: 'auto' },
-                      }}
-                    >
-                      {/* eslint-disable-next-line */}
-                      <img src="/images/headline-curve.svg" alt="Headline curve" />
-                    </Box>
+                    flat-rate leasing{' '}
+
                   </Typography>
-                  your{' '}
-                  <Typography
-                    component="span"
-                    sx={{
-                      fontSize: 'inherit',
-                      fontWeight: 'inherit',
-                      position: 'relative',
-                      '& svg': {
-                        position: 'absolute',
-                        top: -16,
-                        right: -21,
-                        width: { xs: 22, md: 30 },
-                        height: 'auto',
-                      },
-                    }}
-                  >
-                    Skill
-                    <svg version="1.1" viewBox="0 0 3183 3072">
-                      <g id="Layer_x0020_1">
-                        <path
-                          fill="#127C71"
-                          d="M2600 224c0,0 0,0 0,0 236,198 259,562 52,809 -254,303 -1849,2089 -2221,1776 -301,-190 917,-1964 1363,-2496 207,-247 570,-287 806,-89z"
-                        />
-                        <path
-                          fill="#127C71"
-                          d="M3166 2190c0,0 0,0 0,0 64,210 -58,443 -270,516 -260,90 -1848,585 -1948,252 -104,-230 1262,-860 1718,-1018 212,-73 437,39 500,250z"
-                        />
-                        <path
-                          fill="#127C71"
-                          d="M566 3c0,0 0,0 0,0 -219,-26 -427,134 -462,356 -44,271 -255,1921 90,1962 245,62 628,-1392 704,-1869 36,-221 -114,-424 -332,-449z"
-                        />
-                      </g>
-                    </svg>
-                  </Typography>{' '}
-                  <br />
-                  with Different Way
+
+
+                  for your rentals
                 </Typography>
               </Box>
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    "Let's take an online course to improve your skills in a different way, you can set your own study time according to your learning speed. So you san study comfortable and absorb tge material easily."
+                    "Our professional team handles all marketing, phone calls, touring, screening and move-in. Just pay $500 when a qualified tenant signs the lease."
                   }
                 </Typography>
               </Box>
@@ -148,11 +117,11 @@ const HomeHero: FC = () => {
                     Get Started
                   </StyledButton>
                 </ScrollLink>
-                <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
+{/*                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrowIcon />}>
                     Watch Video
                   </StyledButton>
-                </ScrollLink>
+                </ScrollLink> */}
               </Box>
             </Box>
           </Grid>
@@ -194,10 +163,10 @@ const HomeHero: FC = () => {
                   component="h6"
                   sx={{ color: 'secondary.main', fontSize: '1.1rem', fontWeight: 700, mb: 0.5 }}
                 >
-                  Certificate
+                  Licensed & Insured
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: 'text.secondary', lineHeight: 1.3 }}>
-                  There are certificates for all courses.
+                  Fully-licensed and insured in Florida
                 </Typography>
               </Box>
             </Box>
